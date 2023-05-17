@@ -26,7 +26,7 @@ console.log( compared );
 compared = 9 === 9;     // === Operador para comparar los valores y los tipos
 console.log( compared );
 
-compared = '9' === 9;   
+compared = '9' === 9;   // Igualdad estricta
 console.log( compared );
 
 // ! NOR > Negacion
