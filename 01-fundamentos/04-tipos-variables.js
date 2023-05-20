@@ -24,7 +24,7 @@ console.log( typeof isNull );
 let isUndefined = undefined;    // Undefined: Indefinido
 console.log( typeof isUndefined );
 
-let symbolValue = Symbol[ 'hola' ];     // Symbol: Simbolo
+let symbolValue = Symbol( 'hola' );     // Symbol: Simbolo
 console.log( typeof symbolValue );
 
 // Tipos de datos: Son considerados tipos de datos en JavaScript (Estructura de datos)
@@ -38,7 +38,7 @@ let winner = {
     height: 1.68,
     isDeveloper: true
 };
-console.log( typeof winner, winner );
+console.log( typeof winner, winner.name );
 
 
 // null / void / undefined (Ver: https://blog.everstarck.dev/p/nullundefined/null_hu36bad1dac3163df17837949b418cec4c_36143_1600x0_resize_q75_box.jpg)
