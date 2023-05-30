@@ -77,7 +77,7 @@ console.log(miArray); // Resultado: [1, 2, 3]
 
 // 15. Ordenar los elementos de un array en orden descendente:
 let miArray = [3, 1, 2];
-miArray.sort(function(a, b) {
+miArray.sort( function(a, b) {
   return b - a;
 });
 console.log(miArray); // Resultado: [3, 2, 1]
