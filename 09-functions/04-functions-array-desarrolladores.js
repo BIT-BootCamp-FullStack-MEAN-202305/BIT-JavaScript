@@ -1,7 +1,6 @@
 const cantidadNombres = Number( prompt( 'Digita la cantidad de personas que deseas registrar' ) );
 let nombresDesarrolladores = [];
 
-
 // console.log( typeof cantidadNombres );
 
 function perdirNombre () {
