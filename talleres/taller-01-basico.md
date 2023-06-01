@@ -1,4 +1,6 @@
-# Taller 1
+# Taller 1 - Básico
+
+Este taller es de nivel básico y pretende afianzar los conocimientos adquiridos sobre los fundamentos de JavaScript.
 
 1. Escribe un programa que pida al usuario ingresar un número, luego pide un segundo número e imprime en la consola la suma de los dos números ingresados.
 
