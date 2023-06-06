@@ -1,4 +1,4 @@
-# Taller 2 - Intermedio
+# Taller 1 - Intermedio
 
 ## Objetivo del taller
 
