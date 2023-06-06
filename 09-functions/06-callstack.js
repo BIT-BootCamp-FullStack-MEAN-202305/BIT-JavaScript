@@ -1,3 +1,4 @@
+/** Ejemplo para explicar el CallStack o Pila de llamadas */
 function primera() {
     console.log( 'Soy la primera' );
     segunda();
