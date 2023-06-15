@@ -1,6 +1,10 @@
 # Taller 3 - Básico
 
-Este taller es de nivel básico y pretende afianzar los conocimientos adquiridos sobre los fundamentos de JavaScript.
+Este taller es de nivel básico y pretende afianzar los conocimientos adquiridos sobre los fundamentos de JavaScript. Este taller es una guia que te orientará en cada uno de los puntos en las tareas en las que nos debemos enfocar para ir resolviendo un problema mucho mas grande paso por paso.
+
+## Productos de una tienda
+
+### Insertar productos
 
 1. En este primer punto te ayudare a crear una lista de productos, cada uno de los cuales tendrá los siguientes datos: nombre, cantidad y precio
 
