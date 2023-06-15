@@ -45,7 +45,7 @@ Este taller es de nivel básico y pretende afianzar los conocimientos adquiridos
         do{
 
             const 
-                nombre = prompt( 'Digita el nombre del producto' )
+                nombre = prompt( 'Digita el nombre del producto' ),
                 cantidad = prompt( `Indica la cantidad de ${ nombre } disponibles` ),
                 precio = prompt( `Asigna el precio a ${ nombre }` );
 
