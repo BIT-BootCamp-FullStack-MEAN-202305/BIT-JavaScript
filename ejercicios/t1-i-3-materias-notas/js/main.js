@@ -23,7 +23,7 @@ class Grades {
     }
 
     add( newNota ) {
-        if( isNaN( newNota ) ){
+        if( isNaN( newNota ) ) {
             throw new Error( 'Se esperan solo valores numericos' );
         }
 
