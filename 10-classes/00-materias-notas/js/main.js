@@ -57,36 +57,29 @@ class Notas {
     }
 }
 
-// const objNotas = new Notas();
-// objNotas.agregar( 3.4 );
-// objNotas.agregar( 3.5 );
-// objNotas.agregar( 4.5 );
+class Materias {
+    /** Atributos */
+    #nombre;
+    #notas = [];
 
-// console.log( objNotas.getNotas() );
+    constructor( nombreMateria, notasMateria ) {
+        this.#nombre = nombreMateria;
+        this.#notas = notasMateria;
+    }
+}
 
-// objNotas.setNotas([ 4.5, 2.3, 1.2 ]);
-// objNotas.grade = [ 4.5, 2.3, 1.2 ];
-// objNotas.agregar( 3.2 );
-// objNotas.agregar( 4.2 );
-// // objNotas.agregar( '' );
-// objNotas.agregar( '4.3' );
+class Alumno {
+    #nombre;
+    #materias = [];
 
-// objNotas.agregar( 'juan' );
+    constructor( nombreAlumno, materiasAlumno ) {
+        this.#nombre = nombreAlumno;
+        this.#materias = materiasAlumno;
+    }
+}
 
-// console.log( objNotas.grade );
-
-// objNotas.agregar( 4.4 );
-// console.log( objNotas.getNotas() );
-
-// objNotas.adicionar([ 2.2, 3.3, 4.4 ]);
-// console.log( objNotas.getNotas() );
-
-// console.log(
-//     objNotas.promedio()    
-// );
 
 /** Implementacion */
-
 function insertarNotas() {
 
     const objNotas = new Notas();
@@ -99,8 +92,34 @@ function insertarNotas() {
     return objNotas; 
 }
 
-const objN = insertarNotas();
-console.log( objN.promedio() );
+function insertarMaterias () {
+    const listaMaterias = [];
+
+    for( let i = 0; i < 3; i++ ) {
+        
+        const nombreMateria = prompt( 'Digita nombre de la materia' );
+        const objN = insertarNotas();
+        const infoMateria = new Materias( nombreMateria, objN.grade );
+        
+        listaMaterias.push( infoMateria );
+    }
+
+    return listaMaterias;
+}
+
+const nombreAlumno = prompt( 'Digita nombre alumno' );;
+const alumno = new Alumno( nombreAlumno, insertarMaterias() );
+console.log( alumno );
+
+
+// insertarMaterias();
+
+// const objN = insertarNotas();
+// console.log( objN.grade );
+
+// const infoMaterias = new Materias( 'Matematicas', objN.grade );
+// console.log( infoMaterias );
+
 
 
 
