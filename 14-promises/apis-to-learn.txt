@@ -1,0 +1,14 @@
+APIs gratuitas
+
+https://jsonplaceholder.typicode.com
+https://dog.ceo/dog-api/
+https://jikan.moe/
+https://omdbapi.com/            -> API Key
+https://openweathermap.org/     -> API Key
+https://breakingbadquotes.xyz/
+https://api.nasa.gov/           -> API Key
+https://pokeapi.co/
+https://rapidapi.com/hub
+https://randommer.io/
+https://randomuser.me/
+https://api-ninjas.com/api/randomimage
