@@ -1,0 +1,1 @@
+// Definir una promesa que resuelve positivamente si un numero aleatorio dado entre 0 y 10 es par, en otro caso dicha promesa es rechazada. Simulemos una demora en la peticion de 3 segundos.
