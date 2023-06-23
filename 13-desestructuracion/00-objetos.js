@@ -8,5 +8,7 @@ function getUser() {
     }
 }
 
-const { nombre, hobbies } = getUser();
+
+const nombre = 'Julian';
+const { nombre : name, hobbies } = getUser();  // Ojo los dos puntos es la forma de crear un alias
 console.log( nombre, hobbies[ 1 ] );
