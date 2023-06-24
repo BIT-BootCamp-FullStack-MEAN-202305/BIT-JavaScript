@@ -8,7 +8,7 @@ const
     unalMed = new Universidad( 2, 'Medellin', 'Universidad Nacional de Colombia' );
 
 // Agregamos los miembros de la Unal Bogota
-const nicolasAlumno = new Alumno( 1, 'Nicolas', 'Masculino', 18, 'Ing Sistemas', 1, false )
+const nicolasAlumno = new Alumno( 1, 'Nicolas', 'Masculino', 18, 'Ing Sistemas', 1, false );
 unalBog.addMiembros( nicolasAlumno );
 unalBog.addMiembros( new Alumno( 2, 'Axel', 'Masculino', 21, 'Ing Software', 2, false ) );
 unalBog.addMiembros( new Alumno( 3, 'Ana Maria', 'Femenino', 27, 'Arquitectura', 7, false  ) );
@@ -37,7 +37,19 @@ for( let i = 0; i < miembros.length; i++ ) {
     }
 }
 
-console.log( `Cantidad de Hombres ${ countHombres}, Cantidad de Mujeres ${ countMujeres }` );
+// console.log( `Cantidad de Hombres ${ countHombres}, Cantidad de Mujeres ${ countMujeres }` );
+console.log( unalBog );
+console.log( unalBog.miembros );            // Array miembros
+
+let i = 0;
+let suma = 0;       // Acumulador
+while( i < unalBog.miembros.length ) {
+    // console.log( unalBog.miembros[ i ].edad );
+    suma = suma + unalBog.miembros[ i ].edad
+    i++;
+}
+
+console.log( `El promedio de edad de los miembros de la universidad es: ${ Math.round(suma / unalBog.miembros.length) }` );
 
 
 

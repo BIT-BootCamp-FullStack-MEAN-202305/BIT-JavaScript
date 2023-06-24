@@ -3,7 +3,7 @@ export default class Universidad {
     #id;
     #nombre;
     #ciudad;
-    #miembros = [];
+    miembros = [];
 
     constructor( id, ciudad, nombre ) {
         this.#id = id;
@@ -13,12 +13,12 @@ export default class Universidad {
 
     // Getters & Setters (No es la forma recomendada)
     getMiembros() {
-        return this.#miembros;
+        return this.miembros;
     }
 
     // Espera: Objetos de tipo Estudiante y Empleado
     addMiembros( objeto ) {
-        this.#miembros.push( objeto );
+        this.miembros.push( objeto );
     }
 
 

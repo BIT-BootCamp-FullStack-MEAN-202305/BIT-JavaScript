@@ -6,7 +6,7 @@ class Persona {
     #id;            // # Establece el atributo como privado
     #nombre;
     #nacionalidad = 'Colombiano/a';
-    #edad;
+    edad;
     genero;
 
     // Getters & Setters (Forma recomendada)
@@ -19,7 +19,7 @@ class Persona {
         this.#id = cc;
         this.#nombre = elNombre;
         this.genero = genero;
-        this.#edad = edad;
+        this.edad = edad;
     }
 
 }
@@ -28,15 +28,15 @@ class Empleado extends Persona {
     // Atributo y/o Propiedades (Variables)
     #area;
     #cargo;
-    #salario;
+    salario;
     #horario;
-    #funciones = [];
+    funciones = [];
 
     // Este se ejecuta siempre que se crea un objeto a partir de esta clase
     constructor( cc, nombre, genero, edad, cargo, salario ) {
         super( cc, nombre, genero, edad );                    // new Persona() Se parecen
         this.#cargo = cargo;
-        this.#salario = salario;
+        this.salario = salario;
     }
 
 }
@@ -44,20 +44,20 @@ class Empleado extends Persona {
 class Alumno extends Persona {
     // Atributo y/o Propiedades (Variables)
     #carrera;
-    #semestre;
+    semestre;
     #promocion;
 
     // Datos de ingreso por convenio
     constructor( cc, nombre, genero, edad, carrera, semestre, convenio ) {
         super( cc, nombre, genero, edad );
         this.#carrera = carrera; 
-        this.#semestre = semestre
+        this.semestre = semestre
 
         if( convenio ) {
-            this.#semestre = semestre;
+            this.semestre = semestre;
         }
         else {
-            this.#semestre = 1;
+            this.semestre = 1;
         }
 
     
